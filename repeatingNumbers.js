@@ -1,13 +1,13 @@
 let repeatNumbers = function(data) {
-  let result = ""
-  for (i in data) {
+  let result = "";
+  for (let i in data) {
     if (i > 0) {
-      result += ", "
+      result += ", ";
     }
     for (let k = 0; k < data[i][1]; k++) {
-    result += data[i][0];
-    } 
-  };
+      result += data[i][0];
+    }
+  }
   return result;
 };
 
